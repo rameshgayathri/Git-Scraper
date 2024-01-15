@@ -15,39 +15,39 @@ pip install beautifulsoup4 requests pandas
 ```
 
 ## How to Use
-1. Run the script `scrape_topics_repos.py`.
+1. Run the script `main.py`.
 2. The script will fetch a list of GitHub topics, and for each topic, it will gather information about the top repositories.
 3. The data will be saved in the `data` directory as CSV files.
 
 ## Functions
 
-### `scrape_topics()`
+ `scrape_topics()`
 - Fetches a list of GitHub topics along with their titles, descriptions, and URLs.
 
-### `get_topic_page(topic_url)`
+ `get_topic_page(topic_url)`
 - Fetches the HTML content of a specific GitHub topic page.
 
-### `get_repo_info(h1_tag, star_tag)`
+ `get_repo_info(h1_tag, star_tag)`
 - Extracts information about a GitHub repository from HTML tags, including username, repository name, stars, and repository URL.
 
-### `get_topic_repos(topic_doc)`
+ `get_topic_repos(topic_doc)`
 - Retrieves information about the top repositories within a GitHub topic.
 
-### `scrape_topic(topic_url, path)`
+ `scrape_topic(topic_url, path)`
 - Scrapes information about the top repositories for a specific GitHub topic and saves it as a CSV file.
 
-### `scrape_topics_repos()`
+`scrape_topics_repos()`
 - Main function that orchestrates the entire scraping process.
 - Creates a 'data' directory to store CSV files.
 - Iterates through each GitHub topic, scrapes top repositories, and saves the data.
 
 ## File Structure
-- `scrape_topics_repos.py`: Main script file.
+- `main.py`: Main script file.
 - `data/`: Directory to store CSV files with scraped data.
 
 ## Usage
 ```bash
-python scrape_topics_repos.py
+python main.py
 ```
 
 ## Note
