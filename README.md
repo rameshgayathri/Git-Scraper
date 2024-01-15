@@ -1,4 +1,4 @@
-# GitHub Topics Scraper
+# GitScraper
 
 ## Overview
 This Python script allows you to scrape information about GitHub topics and their top repositories. It utilizes the BeautifulSoup library for web scraping and Pandas for data manipulation. The script fetches data from the GitHub Topics page and extracts details such as topic titles, descriptions, URLs, and the top repositories within each topic.
